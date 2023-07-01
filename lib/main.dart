@@ -3,7 +3,7 @@ import 'package:my_google_ads_example/ad_helper.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-
+  adHelper.init();
   runApp(const MainApp());
 }
 
