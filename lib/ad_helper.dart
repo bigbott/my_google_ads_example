@@ -21,6 +21,13 @@ class AdHelper {
   int _numInterstitialLoadAttempts = 0;
   int maxFailedLoadAttempts = 3;
 
+  init() {
+    initGoogleMobileAds();
+    createRewardedAd();
+    createRewardedInterstitialAd();
+    createInterstitialAd();
+  }
+
   Future<InitializationStatus> initGoogleMobileAds() {
     return MobileAds.instance.initialize();
   }

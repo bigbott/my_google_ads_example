@@ -3,10 +3,7 @@ import 'package:my_google_ads_example/ad_helper.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  adHelper.initGoogleMobileAds();
-  adHelper.createRewardedAd();
-  adHelper.createRewardedInterstitialAd();
-  adHelper.createInterstitialAd();
+
   runApp(const MainApp());
 }
 
